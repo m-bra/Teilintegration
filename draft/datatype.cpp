@@ -1,20 +1,23 @@
 #include <iostream>
 #include <string>
 
-struct course{
-    string Teacher;
-    string Room;
-    string Subject;
-}
-struct student{
-    string Name;
-}
-struct timetableEntry{
-    int Time;
-    string Day;
+struct course {
+    string teacher;
+    string room;
+    string subject;
+};
+
+struct student {
+    string name;
+};
+
+struct timetable_entry {
+    int time;
+    string day;
     course course;
-}
-struct studentAssignment{
+};
+
+struct student_assignment {
     student student;
     course course;
-}
+};
