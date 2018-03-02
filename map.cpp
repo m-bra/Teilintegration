@@ -25,7 +25,7 @@ void main() {
 
     //Iterate
     for(auto it = grades.begin(); it != grades.end(); it++) {
-        std::cout << "key" *it << std::endl;
+        std::cout << "key" << *it << std::endl;
     }
 
     //Remove by key, value
