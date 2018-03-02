@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
+
 struct course {
     string teacher;
     string room;
@@ -11,13 +13,10 @@ struct student {
     string name;
 };
 
-struct timetable_entry {
-    int time;
-    string day;
-    course course;
+struct period {
+    /// day: 1-5 (monday-friday)
+    /// hour: 1-8 (schulstunde)
+    int day, hour;
 };
 
-struct student_assignment {
-    student student;
-    course course;
-};
+typedef timetable_entry tt_entry;
