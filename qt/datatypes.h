@@ -19,12 +19,10 @@ struct period {
     int day, hour;
 };
 
-typedef timetable_entry tt_entry;
-
 struct student_wish {
     student student;
-    vector<course> course;
-    vector<period> period;
+    vector<string> subjects;
+    vector<period> periods;
 };
 
 struct student_association {
@@ -32,3 +30,5 @@ struct student_association {
     course course;
     period period;
 };
+
+vector<student_association> associate(vector<student_wish> wishes, map<period, vector<course>> timetable);
