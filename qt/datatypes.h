@@ -20,3 +20,15 @@ struct period {
 };
 
 typedef timetable_entry tt_entry;
+
+struct student_wish {
+    student student;
+    vector<course> course;
+    vector<period> period;
+};
+
+struct student_association {
+    student student;
+    course course;
+    period period;
+};
