@@ -23,7 +23,7 @@ struct period {
     /// hour: 1-8 (schulstunde)
     int day, hour;
 };
-
+namespace std {
 template <>
 struct less<period> { // true if x < y
   bool operator() (const period& x, const period& y) const {
@@ -39,6 +39,7 @@ struct less<period> { // true if x < y
       }
   }
 };
+}
 
 struct student_wish {
     student student;

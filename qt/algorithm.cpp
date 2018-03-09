@@ -37,8 +37,8 @@ void test() {
 
     course muan;
     muan.teacher = "Andersen, Bettina";
-    mfl.subject = "mu";
-    mfl.room = "M1";
+    muan.subject = "mu";
+    muan.room = "M1";
 
     course dew;
     dew.teacher = "Ellwitz, Andrea";
