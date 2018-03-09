@@ -1,3 +1,5 @@
+/*#include <iostream>
+
 int main()
 {
   string text;
@@ -45,4 +47,4 @@ int main()
       
       fscore = 0;
   }
-}
+}*/
