@@ -26,7 +26,10 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    Fairness.cpp
+    Fairness.cpp\
+    algorithm.cpp\
+    file_io.cpp \
+    ui.cpp
 
 HEADERS += \
         mainwindow.h \

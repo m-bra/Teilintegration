@@ -1,6 +1,4 @@
 
-#include "algorithm.h"
-
 void test() {
 
     //student wishes
