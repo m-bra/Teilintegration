@@ -1,0 +1,8 @@
+1,1,kt,Inf2,Krautsalat
+2,5,kt,Inf2,Krautsalat
+2,2,kt,Inf2,Krautsalat
+3,4,kt,Inf2,Krautsalat
+1,3,kt,Inf2,CANER
+1,3,kt,12-8,Krautsalat
+1,3,mb,Inf2,YA
+1,7,mb,Mst9,YEET
