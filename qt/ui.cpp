@@ -4,8 +4,6 @@ using namespace std;
 
 int readlehrer() {
     fstream f;
-    string lehrername;
-    string lehrerkuerzel;
     string lehrerstring;
 
     f.open("lehrerliste.txt", ios::in);
@@ -14,8 +12,17 @@ int readlehrer() {
             f.getline(cstring, sizeof(cstring));
             lehrerstring << cstring << endl;
         }
+    f.close;
 }
 
 int addlehrer() {
+    fstream f;
+    f.open("lehrerliste.txt", ios::out);
 
+    f.close;
 }
+
+
+
+//  http://www.willemer.de/informatik/cpp/fileop.htm
+//  eksdeee
