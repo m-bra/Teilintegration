@@ -4,10 +4,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-<<<<<<< HEAD
 #include <map>
-=======
->>>>>>> 6a00cd6a9db8ce0c168656772bd57bfc61bd8d83
 
 using namespace std;
 
@@ -26,30 +23,23 @@ struct period {
     /// hour: 1-8 (schulstunde)
     int day, hour;
 };
-<<<<<<< HEAD
-namespace std {
-=======
 
 namespace std {
-
->>>>>>> 6a00cd6a9db8ce0c168656772bd57bfc61bd8d83
-template <>
-struct less<period> { // true if x < y
-  bool operator() (const period& x, const period& y) const {
-      if (x.day < y.day)
-          return true;
-      else if (x.day > y.day)
-          return false;
-      else {
-          if (x.hour < y.hour)
+    template <>
+    struct less<period> { // true if x < y
+      bool operator() (const period& x, const period& y) const {
+          if (x.day < y.day)
               return true;
-          else
+          else if (x.day > y.day)
               return false;
+          else {
+              if (x.hour < y.hour)
+                  return true;
+              else
+                  return false;
+          }
       }
-  }
-};
-}
-
+    };
 }
 
 struct student_wish {

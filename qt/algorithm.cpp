@@ -1,11 +1,7 @@
 
-<<<<<<< HEAD
 #include "algorithm.h"
 #include <iostream>
-=======
 #include <datatypes.h>
-
->>>>>>> 6a00cd6a9db8ce0c168656772bd57bfc61bd8d83
 
 void test() {
 
