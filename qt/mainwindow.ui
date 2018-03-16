@@ -7,22 +7,481 @@
     <x>0</x>
     <y>0</y>
     <width>779</width>
-    <height>512</height>
+    <height>486</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralWidget"/>
-  <widget class="QMenuBar" name="menuBar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>779</width>
-     <height>26</height>
-    </rect>
-   </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>771</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab_schueler">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <attribute name="title">
+      <string>Schüler</string>
+     </attribute>
+     <widget class="QTableView" name="schuelerplan">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>30</y>
+        <width>601</width>
+        <height>391</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="wunsch1">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>111</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>-- kein Wunsch --</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bio</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Chemie</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Englisch</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Deutsch</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Englisch</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Französisch</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Geografie</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Geschichte</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Informatik</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Kunst</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mathe</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Musik</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Latein</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Philosophie</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Physik</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Religion</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Spanisch</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Sport</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>WiPo</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLineEdit" name="vorname">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_vorname">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Vorname</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="nachname">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_nachname">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nachname</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_wuensche">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>140</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Schülerwünsche</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="wunsch3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>220</y>
+        <width>111</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>-- kein Wunsch --</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bio</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Chemie</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Englisch</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Deutsch</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Englisch</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Französisch</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Geografie</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Geschichte</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Informatik</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Kunst</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mathe</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Musik</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Latein</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Philosophie</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Physik</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Religion</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Spanisch</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Sport</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>WiPo</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="wunsch2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>190</y>
+        <width>111</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>-- kein Wunsch --</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bio</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Chemie</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Englisch</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Deutsch</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Englisch</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Französisch</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Geografie</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Geschichte</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Informatik</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Kunst</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mathe</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Musik</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Latein</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Philosophie</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Physik</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Religion</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Spanisch</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Sport</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>WiPo</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_lehrer">
+     <attribute name="title">
+      <string>Lehrer</string>
+     </attribute>
+     <widget class="QLabel" name="lbl_lehrkraft">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Lehrkraft</string>
+      </property>
+     </widget>
+     <widget class="QTableView" name="lehrerplan">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>30</y>
+        <width>601</width>
+        <height>391</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="lehrerauswahl">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>131</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Herr Lit</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Frau Baum</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+   </widget>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">

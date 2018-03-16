@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 
 using namespace std;
 
@@ -22,6 +23,8 @@ struct period {
     int day, hour;
 };
 
+namespace std {
+
 template <>
 struct less<period> { // true if x < y
   bool operator() (const period& x, const period& y) const {
@@ -37,6 +40,8 @@ struct less<period> { // true if x < y
       }
   }
 };
+
+}
 
 struct student_wish {
     student student;
