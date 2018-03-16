@@ -26,6 +26,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
+<<<<<<< HEAD
     Fairness.cpp \
     algorithm.cpp
 
