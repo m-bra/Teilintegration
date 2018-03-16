@@ -29,6 +29,12 @@ SOURCES += \
 <<<<<<< HEAD
     Fairness.cpp \
     algorithm.cpp
+=======
+    Fairness.cpp\
+    algorithm.cpp\
+    file_io.cpp \
+    ui.cpp
+>>>>>>> 6a00cd6a9db8ce0c168656772bd57bfc61bd8d83
 
 HEADERS += \
         mainwindow.h \

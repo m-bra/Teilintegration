@@ -4,7 +4,10 @@
 #include <iostream>
 #include <string>
 #include <vector>
+<<<<<<< HEAD
 #include <map>
+=======
+>>>>>>> 6a00cd6a9db8ce0c168656772bd57bfc61bd8d83
 
 using namespace std;
 
@@ -25,6 +28,11 @@ struct period {
 };
 <<<<<<< HEAD
 namespace std {
+=======
+
+namespace std {
+
+>>>>>>> 6a00cd6a9db8ce0c168656772bd57bfc61bd8d83
 template <>
 struct less<period> { // true if x < y
   bool operator() (const period& x, const period& y) const {
