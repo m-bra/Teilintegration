@@ -12,8 +12,8 @@
 
 using namespace std;
 
-map<period, vector<course>> load_timetable(string filename) {
-    map<period, vector<course>> timetable;
+Timetable load_timetable(string filename) {
+    Timetable timetable;
 
     ifstream t(filename.c_str());
     string s((istreambuf_iterator<char>(t)),istreambuf_iterator<char>());

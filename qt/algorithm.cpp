@@ -58,7 +58,7 @@ void test() {
 
 
     //given timetables
-    map<period, vector<course>> tt;
+    Timetable tt;
 
  #define E(x, y) tt.insert(make_pair(period x, vector<course> y))
 

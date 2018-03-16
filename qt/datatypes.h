@@ -24,6 +24,8 @@ struct period {
     int day, hour;
 };
 
+typedef map<period, vector<course>> Timetable;
+
 namespace std {
     template <>
     struct less<period> { // true if x < y
