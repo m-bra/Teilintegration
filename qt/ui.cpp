@@ -1,16 +1,16 @@
 #include <fstream>
 using namespace std;
 
-void readlehrer() {
-    fstream f;
-    char cstring[256];
-    f.open(argv[1], ios::in);
-    while (!f.eof()) {
-        f.getline(cstring, sizeof(cstring));
-        cout << cstring << endl;
-    }
-    f.close();
-}
+//void readlehrer() {
+//    fstream f;
+//    char cstring[256];
+//    f.open(argv[1], ios::in);
+//    while (!f.eof()) {
+//        f.getline(cstring, sizeof(cstring));
+//        cout << cstring << endl;
+//    }
+//    f.close();
+//}
 
 
 
