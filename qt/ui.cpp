@@ -1,29 +1,17 @@
 #include <fstream>
-#include <string>
 using namespace std;
 
-//int readlehrer() {
-//    fstream f;
-//    string lehrerstring;
+void readlehrer() {
+    fstream f;
+    char cstring[256];
+    f.open(argv[1], ios::in);
+    while (!f.eof()) {
+        f.getline(cstring, sizeof(cstring));
+        cout << cstring << endl;
+    }
+    f.close();
+}
 
-//    char cstring[256];
-
-//    f.open("lehrerliste.txt", ios::in);
-//    while (!f.eof())
-//        {
-//            f.getline(cstring, sizeof(cstring));
-//            lehrerstring.append(cstring);
-//            lehrerstring.append(endl);
-//        }
-//    f.close();
-//}
-
-//int addlehrer() {
-//    fstream f;
-//    f.open("lehrerliste.txt", ios::out);
-
-//    f.close();
-//}
 
 
 
