@@ -7,10 +7,12 @@
 
 using namespace std;
 
-map<period, vector<course>> load_timetable(string filename);
-map<student, course> load_students(string filename);
-void save_students(string filename, map<student, course>);
+Timetable load_timetable(string filename);
+map<Course, vector<Student>> load_students(string filename);
 
-void readLine(string line, period& period, course& course);
+void save_students(string filename, map<Course, vector<Student>>);
+
+void readTimetableLine(string line, Period& period, Course& course);
+void readStudentLine(string line, Course& course, Student& student);
 
 #endif // FILE_IO_H

@@ -8,28 +8,28 @@
 
 using namespace std;
 
-struct course {
+struct Course {
     string teacher;
-    string room;
     string subject;
+    string room;
 };
 
-struct student {
+struct Student {
     string name;
 };
 
-struct period {
-    /// day: 1-5 (monday-friday)
-    /// hour: 1-8 (schulstunde)
+struct Period {
+    // day: 1-5 (monday-friday)
+    // hour: 1-8 (schulstunde)
     int day, hour;
 };
 
-typedef map<period, vector<course>> Timetable;
+typedef map<Period, vector<Course>> Timetable;
 
 namespace std {
     template <>
-    struct less<period> { // true if x < y
-      bool operator() (const period& x, const period& y) const {
+    struct less<Period> { // true if x < y
+      bool operator() (const Period& x, const Period& y) const {
           if (x.day < y.day)
               return true;
           else if (x.day > y.day)
@@ -42,20 +42,45 @@ namespace std {
           }
       }
     };
+
+    template <>
+    struct less<Course> { // true if x < y; teacher > subject > room
+      bool operator() (const Course& x, const Course& y) const {
+          if (x.teacher < y.teacher)
+              return true;
+          else if (x.teacher > y.teacher)
+              return false;
+          else {
+              if (x.subject < y.subject)
+                  return true;
+              else if (x.subject > y.subject)
+                  return false;
+              else {
+                  if (x.room < y.room)
+                      return true;
+                  else if (x.room > y.room)
+                      return false;
+                  else {
+                    return true;  // falls alles gleich ist, keine ficks sind gegeben
+                  }
+              }
+          }
+      }
+    };
 }
 
-struct student_wish {
-    student student;
+struct Student_Wish {
+    Student student;
     vector<string> subjects;
-    vector<period> periods;
+    vector<Period> periods;
 };
 
-struct student_association {
-    student student;
-    course course;
-    period period;
+struct Student_Association {
+    Student student;
+    Course course;
+    Period period;
 };
 
-vector<student_association> associate(vector<student_wish> wishes, map<period, vector<course>> timetable);
+vector<Student_Association> associate(vector<Student_Wish> wishes, Timetable timetable);
 
 #endif
