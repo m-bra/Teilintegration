@@ -64,6 +64,21 @@ map<Course, vector<Student>> load_students(string filename) {
 }
 
 
+void save_students(string filename, map<Course, vector<Student>> students) {
+    ofstream out(filename);
+    string output = "";
+
+    for (map<Course, vector<Student>>::iterator it = students.begin(); it != students.end(); it++) {
+        for (int i = 0; i < it->second.size(); i++) {
+            output += it->second[i].name + "," + it->first.teacher + "," + it->first.room + "," + it->first.subject + "\n";
+        }
+    }
+
+    out << output;
+    out.close();
+}
+
+
 void readTimetableLine(string line, Period& period, Course& course) {  // day1,hour1,teacher1,room1,subject1
     vector<string> content = split(line, ',');                         // day2,hour2,teacher2,room2,subject2
 

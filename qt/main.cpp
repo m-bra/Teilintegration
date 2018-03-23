@@ -11,6 +11,10 @@
 using namespace std;
 
 int main(int argc, char *argv[]) {
+    //map<Course, vector<Student>> students = load_students("D:\\Stuff\\qtWorkspace\\Teilintegration\\qt\\studentTest.txt");
+
+    //save_students("outputStud.txt", students);
+
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
