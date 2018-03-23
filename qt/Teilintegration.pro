@@ -36,7 +36,8 @@ HEADERS += \
     datatypes.h \
     file_io.h \
     algorithm.h \
-    Fairness.cpp
+    Fairness.cpp \
+    utils.h
 
 FORMS += \
         mainwindow.ui
