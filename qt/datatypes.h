@@ -61,7 +61,7 @@ namespace std {
                   else if (x.room > y.room)
                       return false;
                   else {
-                    return true;  // falls alles gleich ist, keine ficks sind gegeben
+                    return false;  // falls alles gleich ist, keine ficks sind gegeben
                   }
               }
           }

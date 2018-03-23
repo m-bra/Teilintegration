@@ -4,10 +4,9 @@
 #include <map>
 #include <fstream>
 
-
+#include <utils.h>
 #include <file_io.h>
 #include <datatypes.h>
-#include <utils.h>
 
 
 using namespace std;
@@ -75,11 +74,12 @@ void readTimetableLine(string line, Period& period, Course& course) {  // day1,h
     course.subject = content[4];
 }
 
-void readStudentLine(string line, Course& course, Student& student) {  // teacher1, room1, subject1, student1
-    vector<string> content = split(line, ',');                         // teacher1, room1, subject1, student2
-                                                                       // teacher2, room2, subject2, student1
-    course.teacher = content[0];
-    course.room = content[1];
-    course.subject = content[2];
-    student.name = content[3];
+void readStudentLine(string line, Course& course, Student& student) {  // student1, teacher1, room1, subject1
+    vector<string> content = split(line, ',');                         // student2, teacher1, room1, subject1
+                                                                       // student1, teacher2, room2, subject2
+    student.name = content[0];
+    course.teacher = content[1];
+    course.room = content[2];
+    course.subject = content[3];
+
 }
