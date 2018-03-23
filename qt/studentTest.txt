@@ -1,0 +1,3 @@
+spast,wn,mst8,deu
+sohn,wn,mst8,deu
+spast,au,hag8,ma
